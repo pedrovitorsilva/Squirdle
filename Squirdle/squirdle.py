@@ -1,5 +1,4 @@
 import pandas as pd
-from IPython.core.display import HTML
 from numpy import *
 from melhores_escolhas import *
 from cores import *
