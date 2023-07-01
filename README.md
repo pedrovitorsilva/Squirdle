@@ -6,7 +6,7 @@ In this game, based on data about Pokémon (generation, height, weight, types), 
 
 The website receives this data by simple user inputs, and returns to the user a list of possibilities based on the parameters provided.
 
-* Squirdle 2.0 - The JS Update *
+# Squirdle 2.0 - The JS Update
 
 The code has been completely ported to the Node.js environment, providing users with a much simpler and visual experience compared to the terminal, all on the web.
 
