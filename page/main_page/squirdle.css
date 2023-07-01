@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'pokemon';
+  src: url('../../fonts/pokemon-emerald.ttf') format('opentype');
+}
+
+* {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=14474), auto;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://i.redd.it/74crvhb3vyn61.png);
+  background-size: 1450px;
+  background-position-y: -150px;
+  background-position-x: -100px;
+}
+
+.content {
+  display: flex;
+  margin: 10px;
+}
+
+/*
+.column2{
+  flex: 60%;
+}
+*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  background: linear-gradient(to right, #5dd365, #272727);
+  border-bottom: 1px solid #7e1515;
+  justify-content: space-between;
+}
+
+.header h2 {
+  margin: 12px 8px;
+  font-family: 'pokemon';
+  color: #2a3c32;
+}
+
+.header img {
+  transform: scaleX(-1);
+  position: relative;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.search_box {
+  margin-top: 10px;
+}
+
+#autocomplete {
+  width: 239px;
+  height: 20px;
+  font-family: 'pokemon';
+  border: 1px solid grey;
+  text-align: center;
+}
+
+#autocomplete:focus {
+  outline: none;
+}
+
+.result_element {
+  font-size: small;
+  text-align: center;
+  font-family: 'pokemon';
+  margin: 2px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #d4d4d4;
+  transition: 0.3s;
+}
+
+#results_list {
+  margin: 0;
+  padding: 0;
+  width: 243px;
+  height: 88px;
+  overflow-y: auto;
+}
+
+#results_list:empty {
+  display: none;
+}
+
+/* width */
+#results_list::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+#results_list::-webkit-scrollbar-thumb {
+  background: rgb(8, 0, 7);
+  height: 3px;
+}
+
+/* Background */
+#results_list::-webkit-scrollbar-track {
+  background-color: black;
+  border-left: 1px solid rgb(121, 202, 249);
+  border-right: 1px solid rgb(121, 202, 249);
+}
+
+#details, #guess, #history {
+  margin-left: 5px;
+  background: white;
+  border: 2px solid grey;
+  padding: 10px;
+  font-family: 'pokemon';
+  width: 210px;
+  padding-top: 5px;
+}
+
+#details:empty {
+  display: none;
+}
+
+#details p {
+  margin-top: auto;
+}
+
+/* Padding spacement on type labels */
+#details div p {
+  margin-right: 5px;
+}
+
+#details button {
+  margin-bottom: 10px;
+  font-family: 'pokemon';
+  display: inline-block;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+#details button:hover{
+  filter: drop-shadow(2px 3px 5px grey);
+}
+
+div#details:empty {
+  border: none;
+}
+
+#guess{
+  display: none;
+  width: 250px;
+  margin: 20px;
+}
+
+#guess select{
+  font-family: 'pokemon';
+  border: 1px dashed grey;
+  padding-left: 20px;
+}
+
+.select_background{
+  top: 3px;
+  left: 23px;
+  position: relative;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.higher{
+  content: './assets/pokeballs/up.png';
+}
+
+.lower{
+  content: './assets/pokeballs/down.png';
+}
+
+.equal{
+  content: './assets/pokeballs/correct.png';
+}
+
+.different{
+  content: './assets/pokeballs/wrong.png';
+}
+
+.select_label{
+  font-family: 'pokemon';
+}
+
+#filter {
+  display: table;
+  margin: auto;
+  margin-top: 10px;
+  font-family: 'pokemon';
+  padding: 6px;
+}
+
+#history{
+  display: none;
+  pointer-events: none;
+}
+
+#history h1{
+  font-family: 'pokemon';
+}

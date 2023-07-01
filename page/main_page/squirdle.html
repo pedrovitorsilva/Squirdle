@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Squirdle Solver</title>
+    <!-- Autocomplete (MiniSearch library)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/minisearch@6.1.0/dist/umd/index.min.js"
+      type="module"
+    ></script>
+
+    <!-- My own files-->
+    <link rel="stylesheet" type="text/css" href="../../page/main_page/squirdle.css" />
+    <link rel="stylesheet" type="text/css" href="../../page/pokedex/pokedex.css" />
+    <script src="../../page/main_page/squirdle.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Squirdle Solver: A New Way to Play Squirdle</h2>
+      <img
+        src="https://i.pinimg.com/originals/9f/b1/25/9fb125f1fedc8cc62ab5b20699ebd87d.gif"
+        alt=""
+      />
+    </div>
+    <div class="content">
+      <div class="column1">
+        <div id="pokedex">
+          <div id="loading">
+            <img src="../../assets/loading/pixel-spinning-pokeball.gif" alt="" />
+            <p>Loading...</p>
+          </div>
+          <table id="pokedex_list"></table>
+        </div>
+        <div class="search_box">
+          <input id="autocomplete" type="text" placeholder="Search🔍" />
+          <ul id="results_list"></ul>
+        </div>
+      </div>
+      <div class="column2">
+        <div id="details"></div>
+      </div>
+      <div class="column3">
+        <table id="guess">
+          <tr>
+            <td>
+              <label class="select_label" for="">Generation</label>
+            </td>
+            <td>
+              <img
+                class="select_background"
+                id="select_gen_background"
+                src="../../assets/pokeballs/up.png"
+                alt="Generation"
+              />
+              <select name="select_gen" id="select_gen">
+                <option value="&gt;" class="higher" selected>Higher</option>
+                <option value="&lt;" class="lower">Lower</option>
+                <option value="==" class="equal">Equal</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="select_label" for="">Type 1</label>
+            </td>
+            <td>
+              <img
+                class="select_background"
+                id="select_type1_background"
+                src="../../assets/pokeballs/correct.png"
+                alt="Type 1"
+              />
+              <select name="select_type1" id="select_type1">
+                <option value="==" class="equal" selected>Equal</option>
+                <option value="!=" class="different">Different</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="select_label" for="">Type 2</label>
+            </td>
+            <td>
+              <img
+                class="select_background"
+                id="select_type2_background"
+                src="../../assets/pokeballs/correct.png"
+                alt="Type 2"
+              />
+              <select name="select_type2" id="select_type2">
+                <option value="==" class="equal" selected>Equal</option>
+                <option value="!=" class="different">Different</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="select_label" for="">Height</label>
+            </td>
+            <td>
+              <img
+                class="select_background"
+                id="select_height_background"
+                src="../../assets/pokeballs/up.png"
+                alt="Height"
+              />
+              <select name="select_height" id="select_height">
+                <option value="&gt;" class="higher" selected>Higher</option>
+                <option value="&lt;" class="lower">Smaller</option>
+                <option value="==" class="equal">Equal</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="select_label" for="">Weight</label>
+            </td>
+            <td>
+              <img
+                class="select_background"
+                id="select_weight_background"
+                src="../../assets/pokeballs/down.png"
+                alt="Weight"
+              />
+              <select name="select_weight" id="select_weight">
+                <option value="&gt;" class="higher">Heavier</option>
+                <option value="&lt;" class="lower" selected>Lighter</option>
+                <option value="==" class="equal">Equal</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="filter">Filter</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column4">
+        <div id="history">
+          <h2>History</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

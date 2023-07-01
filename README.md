@@ -1,19 +1,26 @@
 # Squirdle
-Algoritmo que realiza filtragens e ajuda a jogar o jogo Squirdle
+Website that performs filtering and helps play the game Squirdle
 
-Squirdle (https://squirdle.fireblend.com/) é um jogo baseado no jogo Wordle(https://term.ooo/). 
-Nele, a partir de dados sobre Pokemons(geração, altura, peso, tipos), o objetivo é descobrir qual é o Pokemon.
+Squirdle (https://squirdle.fireblend.com/) is a game based on the game Wordle. 
+In this game, based on data about Pokémon (generation, height, weight, types), the objective is to discover which Pokémon it is.
 
-Esse código recebe esses dados e retorna para o usuário uma lista de possibilidades baseado nos parâmetros passados. 
+The website receives this data by simple user inputs, and returns to the user a list of possibilities based on the parameters provided.
 
-Além disso, sugere as melhores opções de chute para continunar jogando.
+* Squirdle 2.0 - The JS Update *
 
-## Imagem do site:
+The code has been completely ported to the Node.js environment, providing users with a much simpler and visual experience compared to the terminal, all on the web.
+
+The new version features images of *all* Pokémon, a search bar with autocomplete, and customizable color layouts based on the selected Pokémon's color palette.
+
+It accepts inputs from both the mouse and arrow keys.
+
+The page layout is inspired by the layout of the Pokémon Emerald game.
+
+## Image from Squirdle Game:
 ![image](https://user-images.githubusercontent.com/85745442/222725000-aa2b2e3e-1569-4579-abc8-314d4043b242.png)
 
-## Imagens do programa, rodando no terminal:
+## Images from Squirdle Solver:
 
-![example](https://user-images.githubusercontent.com/85745442/222199926-2c443c8c-2fd0-4498-a1b0-d9bc87f361ab.png)
-
-![example2](https://user-images.githubusercontent.com/85745442/222200013-934b1678-b419-4829-b158-5bc257dd8c7e.png)
-
+# Credits:
+Credits to {}, for ;
+Credits to {}, for ;
