@@ -15,7 +15,7 @@ O jogo possui um total de 1160 pokémons, incluindo formas regionais, formas alt
 Website that performs filtering and helps play the game Squirdle.
 
 Squirdle (https://squirdle.fireblend.com/) is a game based on the game Wordle. 
-In this game, based on data about Pokémon (generation, height, weight, types), the objective is to discover which Pokémon it is.
+In this game, based on data about Pokémon (generation, height, weight, types), our goal is to discover which Pokémon it is.
 The website receives this data by simple user inputs, and returns to the user a list of possibilities based on the parameters provided.<br/>
 The game has a total of 1160 pokemons, including regional forms, alternative forms and mega-evolutions.
 
